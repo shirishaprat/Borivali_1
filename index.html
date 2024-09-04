@@ -399,13 +399,16 @@ display: flex;
                     break;
             }
         }
-        function style_TranportNetwork_3_1(feature) {
-            switch(String(feature.properties['network'])) {
-                case 'Mumbai Metro Red Line':
-                    return {
-                pane: 'pane_TranportNetwork_3',
-                interactive: true,
-            }
+       function style_TranportNetwork_3_1(feature, latlng) {
+    switch (String(feature.properties['network'])) {
+        case 'Mumbai Metro Red Line':
+            // Define a custom icon for the Mumbai Metro Red Line
+            var metroIcon = L.icon({
+                iconUrl: 'images/metro.png', // Ensure this path is correct
+                iconSize: [25, 25], // Size of the icon
+                iconAnchor: [12, 12], // Anchor point of the icon
+                popupAnchor: [0, -10] // Popup anchor
+            });
                     break;
                 case 'Railway':
                     return {
