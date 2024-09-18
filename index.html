@@ -35,14 +35,7 @@ body {
     width: 100%;
 }
 
-.footer a {
-    color: #fff;
-    text-decoration: none;
-}
 
-.footer a:hover {
-    text-decoration: underline;
-}
 
 #map {
    width: 100%; 
@@ -72,6 +65,15 @@ display: flex;
             font-weight: 700;
             color: #388087 !important;
         }
+		footer a {
+    color: #ffc107; /* Link color */
+    text-decoration: none;
+    margin: 5px; /* Spacing between links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
 #legend {
     position: fixed;
     bottom: 100px;
@@ -742,9 +744,14 @@ display: flex;
             resetLabels([layer_RoadNetwork_2,layer_TranportNetwork_3,layer_skywalk_6]);
         });
         </script>
-	  <footer class="footer">
-        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-    </footer>
+	<footer class="footer">
+    <p>&copy; shirisha</p>
+    <p>
+        Follow us on 
+        <a href="https://krvia.ac.in/">Website</a> | 
+        <a href="https://www.facebook.com/info.krvia/">Facebook</a> | 
+        <a href="https://www.instagram.com/k.r.v.i.a/?hl=en">Instagram</a>
+    </p>
+</footer>
     </body>
 </html>
